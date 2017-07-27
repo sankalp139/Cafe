@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sankalp.cafe.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/EditText"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="latitude"
+            android:layout_below="@id/EditText"
+            android:id="@+id/EditText2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv1"
+            android:text="@string/Topppings"
+
+               style="@style/abcd"
+            android:textSize="20sp"
+            android:layout_below="@id/EditText2"
+            android:layout_marginTop="20dp"
+             />
+
+
+        <CheckBox
+            android:text="@string/ExtraCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:id="@+id/checkBox"
+            android:textSize="20sp"
+            android:layout_below="@id/tv1"
+            android:textColor="?android:attr/actionMenuTextColor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Quantity"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/checkBox"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/line1"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/Button1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="0"
+                android:id="@+id/textView3"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="4dp"
+                 android:id="@+id/Button2"
+                android:layout_toRightOf="@id/textView3"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/text"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="PRICE"
+            android:textColor="#000000"
+            android:layout_below="@id/text"
+            android:id="@+id/Button3"
+            android:layout_marginBottom="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Thank You For visiting us"
+            android:layout_below="@id/Button3"
+            android:id="@+id/abcd"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Bye"
+            android:textSize="30dp"
+            android:layout_below="@id/abcd"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="longitude"
+            android:textColor="#000000"
+            android:id="@+id/EditText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

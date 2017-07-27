@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cafe</string>
+    <string name="ExtraCream">" Supplémentaire crème"</string>
+    <string name="Topppings" translatable="false">Garnitures</string>
+</resources>
